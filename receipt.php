@@ -1,23 +1,20 @@
 <?php
-// require_once "abstract.php";
-//  class rest extends abs_rest{
+require_once "abstract.php";
+ class receipt extends abs_receipt{
 
-//     public function setRestAtrs($name,$type,$price,$vaga,$addr,$time) {
-//         $this->name_rest = $name;
-//         $this->type_rest = $type;
-//         $this->price_rest = $price;
-//         $this->vaga_rest = $vaga;
-//         $this->addr_rest = $addr;
-//         $this->time_rest = $time;
-//       }
-//       public function getRestAtrs(){
-//         return "\n".$this->name_rest."\n".$this->type_rest."\n".$this->price_rest."\n".$this->vaga_rest."\n".$this->time_rest."\n".$this->addr_rest; 
-//       }
-// }
+    public function setReceiptAtrs($id,$pay,$cli,$cpf){
+        $this->id_receipt = $id;
+        $this->pay_receipt = $pay;
+        $this->client_receipt = $cli;
+        $this->cpf_receipt = $cpf;
+      }
 
-// // $as = new rest();
-// // $as->setRestAtrs("Bonnapart", "Restaurante","$$$$$",2,"Rua Cruzado, 86","18:00 - 23:00");
-// // echo $as->getRestAtrs();
+    public function getReceiptAtrs(){
+        return "\n|\n|ID: #".$this->id_receipt."\n|Forma de Pagamento: ".$this->pay_receipt."\n|\n|Cliente: ".$this->client_receipt."\n|CPF: ".$this->cpf_receipt."\n ----------------------------------";
+      }
+}
+
+
 
 
 ?>

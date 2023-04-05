@@ -17,7 +17,7 @@ abstract class abs_food{
   protected $name_food;#string
   protected $desc_food;#string
   protected $price_food;#float
-  protected $cat_food;#string
+  protected $catg_food;#string
   protected $rate_food;#float
 
 
@@ -27,10 +27,7 @@ abstract class abs_food{
 
 
 abstract class abs_receipt{
-  // protected $name_rest;#string
-  // protected $name_food;#string
-  // protected $price_food;#float
-  protected $id_receipt;
+  protected $id_receipt;#float
   protected $pay_receipt;#string
   protected $client_receipt;#float
   protected $cpf_receipt;#float
